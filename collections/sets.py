@@ -16,7 +16,9 @@ print(f"Symetric Difference: {firstSet.symmetric_difference(secondSet)}")
 
 firstSet.pop()
 # firstSet.remove("blablafruit")
-firstSet.discard("blablafruit")
+# firstSet.discard("apple")
+
+print(firstSet)
 
 # --------- frozen set
 frozen_set = frozenset(["e", "f", "g"])

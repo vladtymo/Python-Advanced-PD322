@@ -26,7 +26,7 @@ while not input("Enter 'A': ") == 'A':
 print("Have a good day!")
 
 def checkPassword(password) -> bool:
-    return len(password) >= 6 and '.' in password
+    return len(password) >= 6 and '.' in password # password.Contains('.')
 
 print(checkPassword("Qwer"))
 print(checkPassword("Qwer.3434"))

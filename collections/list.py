@@ -10,7 +10,7 @@ if "purple" not in colors:
     colors.append("purple")
 
 # ---- shallow copy
-shallowList = colors
+shallowList = colors # link copy
 colors[1] = "superpuperwhite"
 
 # ---- deep copy
@@ -22,9 +22,16 @@ print(f"Shallow: {shallowList}")
 print(f"Deep: {deepList}")
 
 # --- deleting
+print(f"Original Colors: {colors}")
+
 colors.pop(3)   # remove fourth
+print(f"Colors: {colors}")
+
 colors.pop()    # remove last
-colors.pop(-1)  # remove last
+print(f"Colors: {colors}")
+
+colors.pop(-2)  # remove 
+print(f"Colors: {colors}")
 
 if "black" in colors:
     colors.remove("black")
@@ -39,4 +46,3 @@ for x in darks:
 
 
 mixed = [23, "red", True, [1, 2, 3], lambda x: x * x, 343.5, { 1, 2, 3 }]
-

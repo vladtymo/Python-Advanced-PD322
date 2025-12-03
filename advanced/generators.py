@@ -1,5 +1,7 @@
 # -------------- generators
 # yield vs return
+
+# yield return 0
 def testYield():
     print("---1---")
     yield 1
@@ -16,9 +18,9 @@ for i in testYield():
 
 
 def fibonacci_numbers(max):
-    x, y = 1, 1
-    while x <= max:
-        yield x
+    x, y = 0, 1
+    while y <= max:
+        yield y
 
         # if x % 7 == 0:
         #     break
