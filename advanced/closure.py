@@ -15,3 +15,15 @@ calculate()
 calculate()
 calculate()
 
+
+# ---------- simple function without closure
+def simpleFunc():
+
+    number = 1
+
+    print(number)
+    number += 1
+
+simpleFunc()
+simpleFunc()        
+simpleFunc()

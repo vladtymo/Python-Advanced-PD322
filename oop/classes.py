@@ -23,9 +23,13 @@ class Order:
     # getter & setter
     def getPrice(self):
         return self.price
+    
+    def getPriceWithDiscount(self):
+        return self.price * (1 - self.discount / 100)
 
     def setPrice(self, value):
-        self.price = value
+        if value >= 0:
+            self.price = value
 
     # properties
     @property
@@ -40,7 +44,6 @@ class Order:
     # override base str conversion
     def __str__(self) -> str:
         return f"#{self.number}: {self.name} - {self.price}$"
-
 
 order1 = Order("Marshall Major V", 150, 5)
 order2 = Order("Xiaomi Redmi 10", 320, 0)
@@ -58,3 +61,4 @@ order1.show_info()
 print(order1)
 print(order2)
 print(order3)
+
