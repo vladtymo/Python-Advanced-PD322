@@ -8,7 +8,6 @@ def testYield():
     print("---3---")
     yield 3
 
-
 # print(testYield())
 
 for i in testYield():

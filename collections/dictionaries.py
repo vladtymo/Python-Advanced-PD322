@@ -2,7 +2,6 @@
 
 users = { 1200: "Vlad Tm", 555: "Nazar Bla", 9800: "Luda Buda" }
 
-
 users[555] = "Viktor"           # update existing
 users[3000] = "Anna Karanina"   # add new
 

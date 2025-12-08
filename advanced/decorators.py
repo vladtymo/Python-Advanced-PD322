@@ -14,3 +14,5 @@ def showMessage(text):
     print(text)
 
 showMessage("Hello decorators aegaerukfgae")
+showMessage("Hello")
+showMessage("Hello!!!!!!!")
